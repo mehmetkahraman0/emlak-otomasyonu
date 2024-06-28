@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #393E46;
+    width: 90vw;
+    margin: 0 auto 0 auto;
+
+
+}
+
+#root {
+    margin: 0 auto 0 auto;
+}
+
+a{
+    color: black;
+}
+
+.li {
+    text-decoration: none;
+    color: #222831;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+.li:hover {
+    cursor: pointer;
+    color: #EEEEEE;
+    transition: all linear 0.15s;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Navbar.jsx*/
+
+.navbar-container {
+    margin-top: 1vh;
+    border-radius: 10px;
+    height: 8vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00ADB5;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+}
+
+.logo-image {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+
+.items {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/*HomeComponents.jsx*/
+
+.container-homecomponent {
+    margin-top: 1vh;
+    width: 90vw;
+    height: 90vh;
+    background-image: url("./assets/home.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.firt-l {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 20px;
+}
+
+.text1 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    color: #222831;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 600;
+
+}
+
+.text2 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #222831;
+    margin-bottom: 8px;
+    font-family: "Merriweather", sans-serif;
+}
+
+.text3 {
+    letter-spacing: 0.5px;
+    color: #393E46;
+    font-size: 18px;
+    font-family: "Merriweather", sans-serif;
+
+}
+
+
+.asidehomecomponent-container {
+    height: 510px;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.home-slider {
+    height: 500px;
+    width: 45vw;
+
+}
+
+.carousel-items {
+    margin: 0 70px 0 70px
+}
+
+.carousel {
+    margin-top: 10px;
+    height: 300px;
+    width: 40v;
+    box-shadow: 15px 20px 30px #222831;
+}
+
+.aside-text-p {
+    width: 35vw;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.carousel-image {
+    height: 300px;
+    width: 400px;
+}
+
+.home-slider {
+    height: 500px;
+}
+
+
+
+
+/*EstateList.jsx*/
+
+
+
+
+.carousel-container {
+    text-align: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.estatelistitem .ant-card {
+    width: 100%;
+}
+
+.estatelistitem .ant-card-meta-description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*AboutPage.jsx*/
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* This will make sure the container takes up the full height of the viewport */
+}
+
+.about-area {
+    background-color: #EEEEEE;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    max-width: 750px;
+    /* Adjust this value to your preference */
+    text-align: center;
+    box-shadow: 10px 10px 20px #00ADB5;
+}
+
+.about-text {
+    margin: 12px;
+    /* Remove default margins */
+    letter-spacing: 0.5px;
+    text-align: left;
+
+}
+
+.about-text-1 {
+    text-align: left;
+    margin: 20px 0 10px 12px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/*CreateEstate.jsx*/
+
+.create-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 120px;
+    row-gap: 12px;
+}
+
+.create-container .ant-form-item-label > label {
+    color: #EEEEDD;
+  }
+
+.profile-container .ant-form-item-label > label{
+    color: #EEEEDD;
+  }
+
+  /*ProfilePage.jsx*/
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .profile-form {
+    width: 100%;
+    max-width: 500px; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #222831; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visuals */
+  }
